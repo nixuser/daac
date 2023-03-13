@@ -11,3 +11,7 @@ jobs:
       - uses: charmbracelet/vhs-action@v1
         with:
           path: 'vhs.tape'
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: ./test_uname.gif
