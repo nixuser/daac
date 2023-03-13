@@ -1,0 +1,13 @@
+name: comment gif
+on:
+  pull_request:
+    paths:
+      - vhs.tape
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: charmbracelet/vhs-action@v1
+        with:
+          path: 'vhs.tape'
